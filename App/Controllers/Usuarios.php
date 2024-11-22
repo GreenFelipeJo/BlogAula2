@@ -143,6 +143,6 @@ class Usuarios extends Controller
         unset($_SESSION['usuario_email']);
 
         session_destroy();
-       URL::redirecionar('usuarios/login');
+       URL::redirecionar('usuarios/logar');
     }//fim da função sair
 }

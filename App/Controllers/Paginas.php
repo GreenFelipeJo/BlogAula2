@@ -1,6 +1,9 @@
 <?php
 class Paginas extends Controller{
     public function index(){
+      if(Sessao::estaLogado()):
+        Url::redirecionar('posts');
+      endif;
       $dados = ['titulo'=>'Pagina Inicial',
                  'descricao'=> 'Aula de PHP'
                ];

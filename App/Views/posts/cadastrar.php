@@ -19,7 +19,7 @@
                 </div>
                 <div class="form-group">
                     <label for="texto">Texto: <sup class="text-danger">*</sup></label>
-                    <textarea rows="5" name='texto' id='texto'  class='form-control <?= $dados['texto_erro'] ? 'is-invalid' : '' ?>'>
+                    <textarea rows="5" name='texto' id='texto'  class='form-control <?= $dados['texto_erro'] ? 'is-invalid' : '' ?>'></textarea>
                     <div class="invalid-feedback">
                         <?= $dados['senha_erro'] ?>
                     </div>

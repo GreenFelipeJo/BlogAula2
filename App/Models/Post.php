@@ -21,13 +21,16 @@ class Post{
     }//fim da função armazenar
 
     public function lerPosts(){
-        $this->db->query("SELECT * ,
-        posts.id as postID, 
-        posts.criado_em as postDataCadastro, 
+        $this->db->query("SELECT *,
+        posts.id as postID,
+        posts.criado_em as postDataCadastro,
         usuarios.id as usuarioId,
-        usuarios.criado_em as usuarioDataCadastro FROM posts INNER JOIN usuarios ON posts.usuario_id = usuarios.id ORDER BY posts.id DESC");
+        usuarios.criado_em as usuarioDataCadastro
+         FROM posts
+         INNER JOIN usuarios ON
+         posts.usuario_id = usuarios.id
+         ");
         return $this->db->resultados();
-        
-    } //fim da função lerPosts
+    }
 
 }//fim da classe

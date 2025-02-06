@@ -7,7 +7,7 @@
             <?=Sessao::mensagem('usuario')?>
             <p class="card-text"><small class="text-muted">Faça o seu login no sistema</small></p>
 
-            <form name="logar" method="POST" action="<?= URL ?>/usuarios/logar" class="mt-4">
+            <form name="logar" method="POST" action="<?= URL ?>/usuarios/login" class="mt-4">
             
                 <div class="form-group">
                     <label for="email">E-mail: <sup class="text-danger">*</sup></label>
